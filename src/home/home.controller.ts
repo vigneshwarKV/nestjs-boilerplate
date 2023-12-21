@@ -15,6 +15,6 @@ export class HomeController {
 
   @Get('/health')
   appHealthInfo() {
-    return 'Service is up'
+    return 'Service is up';
   }
 }
