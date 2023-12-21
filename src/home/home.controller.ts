@@ -12,4 +12,9 @@ export class HomeController {
   appInfo() {
     return this.service.appInfo();
   }
+
+  @Get('/health')
+  appHealthInfo() {
+    return 'Service is up'
+  }
 }
