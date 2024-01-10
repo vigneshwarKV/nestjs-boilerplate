@@ -107,10 +107,10 @@ export class AuthService {
     };
   }
 
-  async validateSocialLogin(
+   validateSocialLogin = async (
     authProvider: string,
     socialData: SocialInterface,
-  ): Promise<LoginResponseType> {
+  ): Promise<LoginResponseType> => {
     let user: NullableType<User> = null;
     const socialEmail = socialData.email?.toLowerCase();
     let userByEmail: NullableType<User> = null;
